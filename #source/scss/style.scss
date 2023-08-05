@@ -25,6 +25,11 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all .3s;
+
+	&:hover {
+		transform: scale(1.2);
+	}
 }
 
 .heading {
@@ -46,16 +51,19 @@ html {
 /*==================================== HEADER ====================================*/
 
 .header {
-
+	position: fixed;
+	z-index: 10;
+	background: #fff;
+	width: 100%;
 	padding-top: 37px;
 	padding-bottom: 43px;
-
 	color: #333;
-	font-family: Poppins;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	transition: all .5s 2s;
+	opacity: 0;
 
 	.container {
 		max-width: 1347px;
@@ -225,6 +233,8 @@ html {
 		font-weight: 400;
 		line-height: normal;
 		margin-bottom: 21px;
+		transform: translate(-100px, 0);
+		transition: all .5s;
 
 		span {
 			font-weight: 700;
@@ -238,19 +248,25 @@ html {
 		line-height: normal;
 		margin-bottom: 30px;
 		max-width: 460px;
+		transform: translate(-100px, 0);
+		transition: all .5s .5s;
 	}
 
 	&__button-box {
+		width: 157px;
+		height: 54px;
 		background: #fff;
+		border-radius: 100px;
+		transform: scale(0);
+		transition: all .5s 1s;
+	}
+
+	&__button {
 		width: 157px;
 		height: 54px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 100px;
-	}
-
-	&__button {
 		font-size: 14px;
 		font-weight: 700;
 		background: var(--3, linear-gradient(180deg, #FD749B 0%, #281AC8 100%));
@@ -261,6 +277,8 @@ html {
 
 	&__img {
 		margin-right: -80px;
+		transform: translate(100px, 0);
+		transition: all .5s 1.5s;
 
 		img {
 			width: 100%;
@@ -297,6 +315,9 @@ html {
 	}
 
 	&__img {
+		transform: translate(-100px, 0);
+		transition: all .5s;
+
 		img {
 			width: 100%;
 			object-fit: contain;
@@ -310,6 +331,8 @@ html {
 
 	&__heading {
 		margin-bottom: 44px;
+		transform: translate(100px, 0);
+		transition: all .5s .5s;
 
 		&::after {
 			content: '';
@@ -328,9 +351,17 @@ html {
 		font-weight: 400;
 		line-height: 40px;
 		margin-bottom: 35px;
+		transform: translate(100px, 0);
+		transition: all .5s 1s;
 	}
 
 	&__button-box {
+		width: 157px;
+		transform: scale(0);
+		transition: all .5s 1.5s;
+	}
+
+	&__button {
 		width: 157px;
 		height: 54px;
 		border-radius: 100px;
@@ -338,9 +369,6 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-
-	&__button {
 		color: #fff;
 	}
 
@@ -372,6 +400,8 @@ html {
 		border-radius: 30px;
 		background: #FFF;
 		box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.25);
+		transition: all .5s;
+		transform: scale(0);
 	}
 
 	&__table-head {
@@ -527,6 +557,8 @@ html {
 		margin-bottom: 50px;
 		max-width: 254px;
 		line-height: normal;
+		transform: translate(-100px, 0);
+		transition: all .5s;
 
 		&::after {
 			content: '';
@@ -546,24 +578,33 @@ html {
 		line-height: 40px;
 		max-width: 542px;
 		margin-bottom: 30px;
+		transform: translate(-100px, 0);
+		transition: all .5s .5s;
 	}
 
 	&__button-box {
 		width: 157px;
 		height: 54px;
+		transform: scale(0);
+		transition: all .5s 1s;
+	}
+
+	&__button {
+		width: 157px;
+		height: 54px;
+		color: #fff;
 		border-radius: 100px;
 		background: linear-gradient(180deg, #FD749B 0%, #281AC8 180%);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	&__button {
-		color: #fff;
 
 	}
 
 	&__img {
+		transform: translate(100px, 0);
+		transition: all .5s 1.5s;
+
 		img {
 			width: 100%;
 		}
@@ -593,12 +634,16 @@ html {
 		position: relative;
 		z-index: 1;
 		box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.10);
+		transform: scale(0);
+		transition: all .5s;
 
 	}
 
 	&__heading {
 		margin-bottom: 60px;
 		text-align: center;
+		transform: scale(0);
+		transition: all .5s .5s;
 
 		&::after {
 			content: '';
@@ -624,6 +669,8 @@ html {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transform: scale(0);
+		transition: all .5s 1s;
 	}
 
 	&__card {
@@ -674,6 +721,8 @@ html {
 	&__heading {
 		text-align: center;
 		margin-bottom: 50px;
+		transform: translate(-100px, 0);
+		transition: all .5s;
 
 		&::after {
 			content: '';
@@ -694,6 +743,8 @@ html {
 		font-weight: 400;
 		line-height: 40px;
 		margin-bottom: 50px;
+		transform: translate(100px, 0);
+		transition: all .5s;
 	}
 
 	&__cards {
@@ -705,6 +756,11 @@ html {
 		width: 370px;
 		height: 286px;
 		transition: all .3s;
+
+		&-wrapper {
+			transform: scale(0);
+			transition: all .5s;
+		}
 
 		&:nth-child(2) {
 			transform: scale(1.2);
@@ -843,6 +899,8 @@ html {
 		text-transform: uppercase;
 		max-width: 356px;
 		margin: 0 auto 45px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 
 		&::after {
 			width: 50px;
@@ -864,6 +922,8 @@ html {
 		line-height: 40px;
 		max-width: 542px;
 		margin: 0 auto 20px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 	}
 
 	&__customers {
@@ -871,6 +931,9 @@ html {
 	}
 
 	&__customers-img {
+		transform: scale(0);
+		transition: all .5s;
+
 		img {
 			display: block;
 			margin: 0 auto;
@@ -890,6 +953,8 @@ html {
 	position: absolute;
 	top: 225px;
 	right: 140px;
+	transform: translate(-100px, 0);
+	transition: all .5s .5s;
 
 	&__name {
 		color: #333;
@@ -948,7 +1013,6 @@ html {
 		left: 0;
 		right: 0;
 		top: -10vw;
-		// z-index: -1;
 		z-index: 0;
 
 		img {
@@ -959,6 +1023,8 @@ html {
 	&__heading {
 		text-align: center;
 		margin-bottom: 50px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 
 		&::after {
 			content: '';
@@ -980,6 +1046,8 @@ html {
 		line-height: 40px;
 		max-width: 378px;
 		margin: 0 auto 34px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 	}
 
 	&__stores {
@@ -989,8 +1057,15 @@ html {
 	}
 
 	&__store {
-		&:not(:last-child) {
+		&--1 {
 			margin-right: 10px;
+			transform: translate(-100px, 0px);
+			transition: all .5s;
+		}
+
+		&--2 {
+			transform: translate(100px, 0px);
+			transition: all .5s .5s;
 		}
 	}
 
@@ -1025,6 +1100,16 @@ html {
 
 	&__img {
 		padding: 0 12px;
+
+		&--1 {
+			transform: translate(-100px, 0);
+			transition: all .5s;
+		}
+
+		&--2 {
+			transform: translate(100px, 0);
+			transition: all .5s .5s;
+		}
 	}
 }
 
@@ -1040,6 +1125,8 @@ html {
 	&__heading {
 		text-align: center;
 		margin-bottom: 37px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 
 		&::after {
 			content: '';
@@ -1062,11 +1149,15 @@ html {
 		font-weight: 400;
 		line-height: 40px;
 		margin-bottom: 74px;
+		transform: translate(0, 100px);
+		transition: all .5s;
 	}
 
 	&__form {
 		display: flex;
 		justify-content: center;
+		transform: translate(0, 100px);
+		transition: all .5s;
 	}
 
 	&__form-input-border {
@@ -1136,6 +1227,23 @@ html {
 
 	&__column {
 		height: 100%;
+		transform: translate(-100px, 0);
+
+		&:first-child {
+			transition: all .5s;
+		}
+
+		&:nth-child(2) {
+			transition: all .5s .5s;
+		}
+
+		&:nth-child(3) {
+				transition: all .5s 1s;
+		}
+
+		&:nth-child(4) {
+				transition: all .5s 1.5s;
+		}
 
 		&:not(:last-child) {
 			margin-right: 15px;
@@ -1228,7 +1336,19 @@ html {
 	}
 }
 
+/*==================================== ANIMATION ====================================*/
 
+.anim-item,
+.loading {
+	opacity: 0;
+}
+
+.anim-item--active,
+.loaded {
+	opacity: 1;
+	transform: translate(0, 0);
+	transform: scale(1);
+}
 
 
 /*==================================== MEDIA ====================================*/
