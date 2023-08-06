@@ -1164,6 +1164,14 @@ html {
   top: 10px;
   right: 10px;
 }
+.testimonial::after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-right: 20px solid rgba(255, 255, 255, 0.6862745098);
+  left: -40px;
+  top: 34%;
+}
 
 /*==================================== DOWNLOADS ====================================*/
 /*==================================== DOWNLOADS ====================================*/
@@ -1551,7 +1559,7 @@ html {
   }
   .testimonial {
     top: 19vw;
-    left: 49vw;
+    left: 51vw;
     right: 0;
   }
 }
@@ -1677,6 +1685,14 @@ html {
     top: 30vw;
     left: 10vw;
     right: 0;
+  }
+  .testimonial::after {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom: 20px solid rgba(255, 255, 255, 0.6862745098);
+    left: 31vw;
+    top: -40px;
   }
   .subscribe {
     padding-bottom: 90px;

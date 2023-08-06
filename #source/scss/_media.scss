@@ -27,7 +27,7 @@
 
 	.testimonial {
 		top: 19vw;
-		left: 49vw;
+		left: 51vw;
 		right: 0;
 	}
 }
@@ -84,6 +84,7 @@
 
 	.hero {
 		padding: 80px 0;
+
 		&__inner {
 			flex-direction: column;
 			text-align: center;
@@ -186,6 +187,15 @@
 		top: 30vw;
 		left: 10vw;
 		right: 0;
+
+		&::after {
+			content: "";
+			position: absolute;
+			border: 20px solid transparent;
+			border-bottom: 20px solid #ffffffaf;
+			left: 31vw;
+			top: -40px;
+		}
 	}
 
 	.subscribe {
