@@ -11,7 +11,7 @@
 			position: relative;
 		}
 
-		&__card {
+		&__card-wrapper {
 			&:nth-child(2) {
 				position: absolute;
 				left: 50%;
@@ -45,7 +45,6 @@
 		}
 	}
 }
-
 
 /*------------------------------ 1050 ------------------------------*/
 
@@ -84,6 +83,7 @@
 	}
 
 	.hero {
+		padding: 80px 0;
 		&__inner {
 			flex-direction: column;
 			text-align: center;
@@ -193,7 +193,6 @@
 	}
 
 }
-
 
 /*------------------------------ 850 ------------------------------*/
 
@@ -369,7 +368,7 @@
 			align-items: center;
 		}
 
-		&__card {
+		&__card-wrapper {
 			&:nth-child(2) {
 				top: 50%;
 				transform: translate(-50%, -50%) scale(1.2);
@@ -483,7 +482,6 @@
 		}
 	}
 }
-
 
 /*------------------------------ 450 ------------------------------*/
 
